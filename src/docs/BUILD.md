@@ -6,17 +6,20 @@ testable and preserve [`RULES.md`](RULES.md).
 ## Target layout
 
 ```text
-core/
+src/
   docs/
     EVIDENCE.md
     RULES.md
     SOLVER.md
     BUILD.md
-  src/tok_core/
-    game.py
-    information.py
+  solver/
+    primitives.py
+    build_tree.py
     tree.py
-    sequence_form.py
+    sequences.py
+    constraints.py
+    payoff.py
+    solve.py
     best_response.py
     cfr_plus.py
     entropy.py
@@ -77,7 +80,7 @@ Gate: `D_1` passes the `1e-6` certificate under reproducible builds.
 Once the package exists, keep these commands stable:
 
 ```powershell
-uv run pytest core/tests -q
+uv run pytest src/tests -q
 uv run python -m tok_core.cli solve --turns 1
 uv run python -m tok_core.cli certify --turns 1
 ```

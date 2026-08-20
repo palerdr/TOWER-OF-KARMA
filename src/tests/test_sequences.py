@@ -1,8 +1,8 @@
 import unittest
 
-from core.solver.build_tree import build_tree
-from core.solver.primitives import Player
-from core.solver.sequences import Sequence, build_sequence_index
+from src.solver.build_tree import build_tree
+from src.solver.primitives import Player
+from src.solver.sequences import Sequence, build_sequence_index
 
 
 class D1SequenceTests(unittest.TestCase):

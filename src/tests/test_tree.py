@@ -1,9 +1,9 @@
 from collections import Counter
 import unittest
 
-from core.solver.build_tree import build_tree
-from core.solver.primitives import Phase, Player, apply, legal_actions
-from core.solver.tree import (
+from src.solver.build_tree import build_tree
+from src.solver.primitives import Phase, Player, apply, legal_actions
+from src.solver.tree import (
     kDraws,
     kEdges,
     kInformationSets,

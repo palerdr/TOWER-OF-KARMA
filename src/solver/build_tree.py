@@ -1,4 +1,4 @@
-from core.solver.primitives import (
+from src.solver.primitives import (
     Action,
     GameState,
     InformationState,
@@ -9,7 +9,7 @@ from core.solver.primitives import (
     legal_actions,
     terminal_returns,
 )
-from core.solver.tree import Edge, GameTree, TreeNode
+from src.solver.tree import Edge, GameTree, TreeNode
 
 
 def build_tree(horizon: int) -> GameTree:

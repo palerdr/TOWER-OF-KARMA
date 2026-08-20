@@ -1,7 +1,7 @@
 from dataclasses import FrozenInstanceError, replace
 import unittest
 
-from core.solver.primitives import (
+from src.solver.primitives import (
     ChooseBeads,
     GameState,
     Guess,

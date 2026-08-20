@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
-from core.solver.primitives import Action, InformationState, Player
-from core.solver.tree import GameTree
+from src.solver.primitives import Action, InformationState, Player
+from src.solver.tree import GameTree
 
 type SequenceId = int
 type InformationSetId = int

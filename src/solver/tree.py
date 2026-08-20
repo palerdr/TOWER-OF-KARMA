@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from core.solver.primitives import (
+from src.solver.primitives import (
     Action,
     GameState,
     InformationState,
